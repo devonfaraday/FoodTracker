@@ -50,15 +50,18 @@ class ViewController: UIViewController, UITextFieldDelegate, UIImagePickerContro
         // Set photoImageView to display the selected image.
         photoImageView.image = selectedImage
         
-        // Dismiss the picker
+        // Dismiss the picker .
         dismiss(animated: true, completion: nil)
     }
     
     
     //MARK: Actions
     @IBAction func selectImageFromPhotoLibrary(_ sender: UITapGestureRecognizer) {
+        
         //Hide the Keyboard
         nameTextField.resignFirstResponder()
+        
+        
         
         //UIImagePicerController is a view controller that lets a user pick media from their photo library.
         let imagePickerController = UIImagePickerController()
@@ -76,4 +79,25 @@ class ViewController: UIViewController, UITextFieldDelegate, UIImagePickerContro
     }
 
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 

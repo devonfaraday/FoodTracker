@@ -55,12 +55,11 @@
                                             <outletCollection property="gestureRecognizers" destination="Nfg-ld-LVO" appends="YES" id="tUK-nR-288"/>
                                         </connections>
                                     </imageView>
-                                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QLo-oD-6fp" customClass="RatingControl" customModule="FoodTracker" customModuleProvider="target">
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="QLo-oD-6fp" customClass="RatingControl" customModule="FoodTracker" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="433" width="200" height="110"/>
                                     </stackView>
                                 </subviews>
                                 <constraints>
-                                    <constraint firstAttribute="trailing" secondItem="QLo-oD-6fp" secondAttribute="trailing" constant="143" id="I1A-0r-bTh"/>
                                     <constraint firstAttribute="trailing" secondItem="OuJ-0k-uNd" secondAttribute="trailing" id="mdb-50-YR7"/>
                                 </constraints>
                             </stackView>

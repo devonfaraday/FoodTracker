@@ -68,6 +68,7 @@ class ViewController: UIViewController, UITextFieldDelegate, UIImagePickerContro
         
         // ONly allow photos to be picked, not taken
         imagePickerController.sourceType = .photoLibrary
+       // imagePickerController.sourceType = .camera
         
         // Make sure ViewController is notified when the user picks an image.
         imagePickerController.delegate = self

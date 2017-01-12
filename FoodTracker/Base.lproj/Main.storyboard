@@ -24,7 +24,7 @@
                                 <rect key="frame" x="0.0" y="28" width="375" height="90"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="egS-5X-KRT" id="hsp-pP-pzR">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="89"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="89.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="defaultphoto_2x" translatesAutoresizingMaskIntoConstraints="NO" id="npY-zY-FJW">
@@ -59,7 +59,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ucs-qR-A3P" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1380" y="69"/>
+            <point key="canvasLocation" x="-1494" y="79"/>
         </scene>
         <!--Meal View Controller-->
         <scene sceneID="tne-QT-ifu">
@@ -74,11 +74,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" axis="vertical" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="wsR-l0-lbU">
-<<<<<<< Updated upstream
                                 <rect key="frame" x="16" y="40" width="343" height="410"/>
-=======
-                                <rect key="frame" x="16" y="40" width="343" height="448"/>
->>>>>>> Stashed changes
                                 <subviews>
                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" verticalCompressionResistancePriority="751" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter meal name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="OuJ-0k-uNd">
                                         <rect key="frame" x="0.0" y="0.0" width="343" height="30"/>
@@ -129,7 +125,7 @@
                     </connections>
                 </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="-890" y="87"/>
+            <point key="canvasLocation" x="-650" y="69"/>
         </scene>
     </scenes>
     <resources>

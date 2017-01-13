@@ -99,7 +99,7 @@ class MealTableViewController: UITableViewController {
   //   MARK: - Navigation
 
    //  In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+     func prepare(for segue: UIStoryboardSegue, sender: AnyObject?) {
  
         super.prepare(for: segue, sender: sender)
         
@@ -129,11 +129,19 @@ class MealTableViewController: UITableViewController {
     //MARK: Actions
     @IBAction func unwindToMealList(sender: UIStoryboardSegue) {
         if let sourceViewController = sender.source as? MealViewController, let meal = sourceViewController.meal {
-            //add a new meal
-            let newIndexPath = IndexPath(row: meals.count, section: 0)
             
-            meals.append(meal)
-            tableView.insertRows(at: [newIndexPath], with: .automatic)
+            if let selectedIndexPath = tableView.indexPathForSelectedRow {
+                // update and existing meal
+                meals[selectedIndexPath.row] = meal
+                tableView.reloadRows(at: [selectedIndexPath], with: .none)
+                
+            } else {
+                //add a new meal
+                let newIndexPath = IndexPath(row: meals.count, section: 0)
+                meals.append(meal)
+                tableView.insertRows(at: [newIndexPath], with: .automatic)
+            }
+            
         }
     }
     
